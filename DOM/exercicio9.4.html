@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - JavaScript</title>
+    <style>
+        body{
+            background-color: blue;
+            color: yellowgreen;
+            font: normal 18pt arial;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entendendo o DOM</h1>
+    <p>Postando Aqui os Resultados</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">
+        Clique Aqui!!!
+    </div>
+    <script>
+        var d = window.document.getElementById('msg')
+        d.style.background = 'white'
+        d.inner.text('Aguarde um Minuto...')
+    </script>
+</body>
+</html>
