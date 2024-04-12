@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSE - Senai-PI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+        body{
+            background-color: rgb(4, 4, 65);
+            color: yellowgreen;
+            font: normal 18pt arial;
+            text-align: center;
+        }
+        h1{
+            font-family: "Russo One", sans-serif;
+        }
+        input#idade{
+            text-align: end;
+            font-size: 30px;
+        }
+        div#res{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificação de Idade para Votação</h1>
+    <span>Digite sua idade:</span>
+        <input type="number" id="idade" name="idade">
+        <input type="button" value="verificar" id="verify" onclick="verificarIdade()">  
+        <div id="res">Resultado</div>
+    <br>
+    <script>
+        function verificarIdade(){
+            var idade = document.querySelector('input#idade').value
+            if (idade < 16){
+                res.innerHTML = 'Não vota!'  
+            }
+            else if (idade < 18 || idade > 65){
+                res.innerHTML = 'Não obrigatório votar,mas pode votar!'
+            }
+            else {
+                res.innerHTML = 'Tú é obrigado a votar'
+            }
+        }
+    </script>
+</body>
+</html>

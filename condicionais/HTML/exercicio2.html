@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade - SENAI-PI</title>
+    <style>
+    body{
+        background: linear-gradient(90deg, rgb(168, 49, 2) 0% , rgb(163, 0, 0));
+        font-size: 25px;
+        text-align: center;
+        font: normal 25pt arial;
+    }
+    input#país{
+        font-size: 30px;
+    }
+    input.button{
+        font-size: 30px;
+        border: solid;
+        border-radius: 5px;
+        background-color: #be6666;
+
+    }
+    input.button:hover{
+        background-color: #814242;
+        border-color: rgb(59, 3, 3);
+    }
+    input#país:hover{
+
+    }
+    strong.ui{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    <input type="text" id="país">
+    <input class="button" type="button" value="verificar" onclick="verificarNacionalidade()">
+    <div id="res" id="Resultado">
+        Resultado
+    </div>
+    <script>
+        function verificarNacionalidade(){
+            var text1 = document.querySelector('input#país').value
+            var br = text1.toUpperCase()[0]
+            var br2 = br + 'rasil'
+            var br3 = br2 == 'Brasil' ? 'Brasil': text1
+            var res = document.querySelector('div#res')
+            res.innerHTML = `vivendo no ${br3}<br>`
+            if (br3 == "Brasil" ){
+                res.innerHTML += 'Você é <strong class="ui">Brasileiro</strong>'
+            }
+            else{
+                res.innerHTML += 'Você é <strong class="ui" >estrangeiro!</strong>'
+            }
+        }
+        
+    </script>
+</body>
+</html>

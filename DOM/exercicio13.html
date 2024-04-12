@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13 - SENAI-PI</title>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    <span>n1</span>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="button" value="Calcular ao Quadrado" onclick="calcularQuadrado()">
+    <input type="button" value="Calcular ao CUBO" onclick="calcularCubo()">
+    <input type="button" value="calcular raiz Quadrada" onclick="calcularRaizQuadrada()">
+
+    <span>n2</span>
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="SOMAR" onclick="somar()">
+    <input type="button" value="SUBTRAIR" onclick="subtrair()">
+    <input type="button" value="DIVIDIR" onclick="dividir()">
+    <input type="button" value="MULTIPLICAR" onclick="multiplicar()">
+
+    <div id="res1">RESULTADO
+        
+    </div>
+
+    <script>
+        var n1
+        var n2
+        function calcularQuadrado(){
+            n1 = Number(document.getElementById('n1'.value))
+            
+            var s = n1 ** 2
+            document.getElementById('res1').innerHTML = `${n1} blablabla`
+
+        }
+        function calcularQuadrado(){
+            n1 = Number(document.getElementById('n1'.value))
+            
+            var s = n1 ** 2
+            document.getElementById('res1').innerHTML = `${n1} blablabla`
+
+        }
+    </script>
+</body>
+</html>
