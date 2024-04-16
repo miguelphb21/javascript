@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO - SENAI-PI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="verificar()"> <!--O onload faz com que o site carreue, sem saida da pagina,ALGO INTERATIVO!-->
+        <header>
+            <h1 class="texto">Sua Idade</h1>
+        </header>
+        <section>
+            <p>Ano de nascimento:
+            <input type="number" name="txtano" id="txtano" min="1900"></p>
+            <hr>
+            <p>Sexo:
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+            </p>
+            <input type="button" value="Verificar" onclick="verificar()">
+            <div id="res">
+                Mostrar o resultado!
+            </div>
+            <div></div>
+        </section>
+
+    <footer class="texto">
+        &copy MINGUELito Corporation
+    </footer>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
